@@ -58,11 +58,11 @@ export function Introduction() {
         />
       </div>
       <div className="base-1 flex flex-col items-center p-10 h-2/4 min-w-96 max-w-2xl">
-        <p className="text-center text-base sm:text-lg md:text-2xl font-semibold pb-2">
+        <p className="font-nohemi text-center text-base sm:text-lg md:text-2xl font-semibold pb-2">
           👋 Hi there! I'm Mayank Sahai,
         </p>
         {/* Text with typing animation */}
-        <p className="text-center text-sm sm:text-base md:text-xl">{typedText}</p>
+        <p className="font-nohemi text-center text-sm sm:text-base md:text-xl">{typedText}</p>
       </div>
     </div>
   );
