@@ -21,7 +21,7 @@ export function Introduction() {
 
   // Use useEffect to set up a timer to switch images every 3 seconds
   useEffect(() => {
-    const timer = setTimeout(nextImage, 2000);
+    const timer = setTimeout(nextImage, 3000);
 
     // Clean up the timer when the component unmounts
     return () => clearTimeout(timer);
@@ -49,20 +49,20 @@ export function Introduction() {
   }, [typedText]); // Re-run effect when typedText changes
 
   return (
-    <div className="flex flex-wrap justify-center items-center h-full">
-      <div className="base-1 w-1/3">
+    <div className="flex flex-col justify-center items-center h-full">
+      <div className="base-1 w-72 pt-10 md:pt-15">
         <img
           className="rounded-full overflow-hidden shadow object-cover"
           src={images[currentIndex]}
           alt="Description of the image"
         />
       </div>
-      <div className="base-1 w-1/3">
-        <p className="text-lg font-semibold pb-2">
+      <div className="base-1 flex flex-col items-center p-10 h-2/4 min-w-96 max-w-2xl">
+        <p className="text-center text-base sm:text-lg md:text-2xl font-semibold pb-2">
           👋 Hi there! I'm Mayank Sahai,
         </p>
         {/* Text with typing animation */}
-        <p>{typedText}</p>
+        <p className="text-center text-sm sm:text-base md:text-xl">{typedText}</p>
       </div>
     </div>
   );
