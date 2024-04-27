@@ -49,12 +49,12 @@ export function Introduction() {
   }, [typedText]); // Re-run effect when typedText changes
 
   return (
-    <div className="flex flex-col justify-center items-center h-full">
-      <div className="base-1 w-72 pt-10 md:pt-15">
+    <div className="flex flex-col justify-center items-center">
+      <div className="base-1 w-60 pt-20">
         <img
           className="rounded-full overflow-hidden shadow object-cover"
           src={images[currentIndex]}
-          alt="Description of the image"
+          alt="Mayank Sahai"
         />
       </div>
       <div className="base-1 flex flex-col items-center p-10 h-2/4 min-w-96 max-w-2xl">
