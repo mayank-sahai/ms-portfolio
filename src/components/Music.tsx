@@ -1,4 +1,3 @@
-import CDvol1 from "../assets/CDvol1.png";
 export function Music() {
   return (
     <div className="flex flex-col justify-center items-center">
