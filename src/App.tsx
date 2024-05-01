@@ -6,8 +6,9 @@ import { Blog } from "./components/Blog";
 import { Music } from "./components/Music";
 import { Art } from "./components/Art";
 import { Notfound } from "./components/Notfound";
-import { Footer } from "./components/Footer";
 import "./App.css";
+
+import BlogPost from "./components/BlogPost";
 
 function App() {
   return (
@@ -20,10 +21,10 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/music" element={<Music />} />
           <Route path="/art" element={<Art />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/*" element={<Notfound />} />
         </Routes>
       </div>
-      <Footer />
     </div>
   );
 }

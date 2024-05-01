@@ -4,7 +4,6 @@ import sticker2 from "../assets/sticker2.png";
 import sticker3 from "../assets/sticker3.png";
 import sticker4 from "../assets/sticker4.png";
 import sticker5 from "../assets/sticker5.png";
-
 export function Introduction() {
   const images = [sticker1, sticker2, sticker3, sticker4, sticker5];
 
@@ -66,6 +65,9 @@ export function Introduction() {
           {typedText}
         </p>
       </div>
+      {/* {currentIndex === images.length - 1 && (
+        // TODO button needs to be added
+      )} */}
     </div>
   );
 }
