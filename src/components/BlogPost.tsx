@@ -8,7 +8,7 @@ function BlogPost() {
   const { id = "647af7d034445f594176ae2b" } = useParams();
   const post = (posts as Post)[id];
   
-  if(post){
+  if(!post){
     return (<div className="flex flex-col justify-center items-center px-10 pb-10">Not found</div>)
   }
 
