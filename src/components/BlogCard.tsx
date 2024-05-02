@@ -1,8 +1,7 @@
 import dayjs from "dayjs";
 import { Link } from 'react-router-dom';
-
-export function BlogCard({ post }) {
-  console.log(post);
+import { Post } from '../types/Post.types'; 
+export function BlogCard({ post }:  { post: Post[string] }) {
   return (
     <Link to={`/blog/${post.id}`} className="flex flex-col sm:flex-row w-full pt-5 mt-5 sm:w-3/4" id={post.id}>
       <div className="pb-2 mr-2 w-24">
