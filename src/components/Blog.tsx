@@ -1,5 +1,5 @@
 import { BlogCard } from "./BlogCard";
-import posts from "../assets/blog.json";
+import posts from "../data/blog.json";
 
 export function Blog() {
   return (

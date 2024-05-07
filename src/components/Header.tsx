@@ -26,7 +26,7 @@ export function Header() {
         </div>
       </Link>
 
-      <ul className="hidden sm:flex rounded-full bg-white/90 px-3 text-sm font-medium shadow-lg text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+      <ul className="hidden sm:flex rounded-full bg-white/90 px-3 text-sm font-medium shadow-lg text-zinc-800 shadow-sky-800/5 hover:shadow-sky-100 ring-1 ring-zinc-900/5 backdrop-blur">
         <li>
           <Link to="/projects" className="block p-4">
             Projects

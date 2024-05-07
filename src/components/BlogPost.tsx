@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import dayjs from "dayjs";
-import posts from "../assets/blog.json";
+import posts from "../data/blog.json";
 import { Post } from '../types/Post.types'; 
 
 function BlogPost() {
@@ -13,10 +13,10 @@ function BlogPost() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center px-10 pb-10">
+    <div className="flex flex-col justify-center items-center px-20 pb-10">
       <div className="flex flex-col justify-center items-center w-full pt-5 mt-5 sm:w-3/4">
-        <div className="pb-2 w-24 mr-auto">
-          <p className="font-medium text-lg">
+        <div className="pb-2 w-30 mr-auto">
+          <p className="font-medium text-2xl">
             {" "}
             |{" "}
             <span className="font-medium text-lg">
