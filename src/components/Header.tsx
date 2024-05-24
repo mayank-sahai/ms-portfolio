@@ -42,11 +42,11 @@ export function Header() {
             Music
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/art" className="block p-4">
             Art
           </Link>
-        </li>
+        </li> */}
       </ul>
 
       <div className="sm:hidden">
@@ -99,7 +99,7 @@ export function Header() {
                   Music
                 </Link>
               </li>
-              <li className="border-b border-gray-300">
+              {/* <li className="border-b border-gray-300">
                 <Link
                   to="/art"
                   className="block py-5 px-2"
@@ -107,7 +107,7 @@ export function Header() {
                 >
                   Art
                 </Link>
-              </li>
+              </li> */}
             </ul>
           )}
         </nav>
